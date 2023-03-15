@@ -2,7 +2,7 @@ var fetchedImages = [];
 var currentIndex = 0;
 
 function getImages() {
-  fetch("./assets/img/crop/")
+  fetch("assets/img/crop/")
     .then(response => response.text())
     .then(text => {
       var parser = new DOMParser();
